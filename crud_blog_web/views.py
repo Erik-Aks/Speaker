@@ -1,7 +1,7 @@
 from django.core import serializers
 from django.shortcuts import render
 from django.http import HttpResponse
-from crud_blog_web.models import Articles
+from crud_blog_web.models import Article
 # Create your views here.
 
 

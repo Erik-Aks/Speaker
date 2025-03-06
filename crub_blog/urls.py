@@ -15,14 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.contrib.auth.urls import urlpatterns
-from django.urls import path
-from django.contrib import admin
 from django.urls import path, include
 from crud_blog_web.views import index
 
-
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('crud_blog_web.urls'))# Указаны правильные аргументы
+    path('test/', index),  # Widok testowy
+    path('admin/', admin.site.urls),  # Admin panel
+    path('api/', include('crud_blog_web.urls')),  # Ładowanie urls z crud_blog_web
 ]
