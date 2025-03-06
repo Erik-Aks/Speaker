@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.contrib.auth.urls import urlpatterns
 from django.urls import path
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from crud_blog_web.views import index
 
 
 urlpatterns = [
-    path('test/', index),  # Указаны правильные аргументы
+    path('admin/', admin.site.urls),
+    path('api/', include('crud_blog_web.urls'))# Указаны правильные аргументы
 ]

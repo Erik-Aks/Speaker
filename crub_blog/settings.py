@@ -55,7 +55,7 @@ ROOT_URLCONF = 'crub_blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'crub_blog.wsgi.application'
+WSGI_APPLICATION = 'crud_blog.wsgi.application'
 
 
 # Database
